@@ -1,0 +1,13 @@
+{
+  "category": "bottle",
+  "n_requests": 42,
+  "torch_threads": 4,
+  "cpu": "x86_64",
+  "cpu_count": 4,
+  "model_ms_p50": 71.35,
+  "model_ms_p95": 101.18499999999999,
+  "request_ms_p50": 123.97880049991272,
+  "request_ms_p95": 161.72819519993024,
+  "images_per_second": 7.85167410230211,
+  "share_sent_to_inspector": 0.7380952380952381
+}

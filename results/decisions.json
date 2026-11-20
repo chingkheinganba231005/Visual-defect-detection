@@ -1,0 +1,1886 @@
+{
+  "assumptions": {
+    "defect_rate": 0.02,
+    "cost_inspection": 1.0,
+    "cost_escape": 100.0,
+    "catch_target": 0.99
+  },
+  "blanket_policies": {
+    "inspect_all": 1.0,
+    "inspect_none": 2.0
+  },
+  "summary": {
+    "patchcore_triage": {
+      "catch_rate": 0.9607247440665342,
+      "false_alarm_rate": 0.1959354725734036,
+      "workload_saved": 0.7887687419967337,
+      "cost_per_unit": 0.28978176987019794,
+      "flagged_share": 0.2112312580032662,
+      "catch_rate_ci": [
+        0.942217785432374,
+        0.9776632939984424
+      ],
+      "false_alarm_rate_ci": [
+        0.1543931652638549,
+        0.24346349914453358
+      ],
+      "workload_saved_ci": [
+        0.7421584622362927,
+        0.8296832203032661
+      ],
+      "cost_per_unit_ci": [
+        0.23675758633357002,
+        0.34759155572149
+      ],
+      "categories_below_catch_target": 8
+    },
+    "patchcore_cost": {
+      "catch_rate": 0.9472539693807527,
+      "false_alarm_rate": 0.08388282215868423,
+      "workload_saved": 0.8988497548968745,
+      "cost_per_unit": 0.2066423063416204,
+      "flagged_share": 0.1011502451031256,
+      "catch_rate_ci": [
+        0.9264470327407648,
+        0.9644896548307988
+      ],
+      "false_alarm_rate_ci": [
+        0.050917203486169,
+        0.11786892896375656
+      ],
+      "workload_saved_ci": [
+        0.8656833270926004,
+        0.9312307602925923
+      ],
+      "cost_per_unit_ci": [
+        0.16009456249043438,
+        0.2581448456374719
+      ],
+      "categories_below_catch_target": 11
+    },
+    "gaussian_triage": {
+      "catch_rate": 0.9498939773148286,
+      "false_alarm_rate": 0.48853360241291277,
+      "workload_saved": 0.502239190089049,
+      "cost_per_unit": 0.597972855281294,
+      "flagged_share": 0.49776080991095106,
+      "catch_rate_ci": [
+        0.9296680301555462,
+        0.9692549563957182
+      ],
+      "false_alarm_rate_ci": [
+        0.4396586689172896,
+        0.5400234293962742
+      ],
+      "workload_saved_ci": [
+        0.45175884291208834,
+        0.5501042799834613
+      ],
+      "cost_per_unit_ci": [
+        0.5355666452962848,
+        0.6565767469090058
+      ],
+      "categories_below_catch_target": 10
+    },
+    "gaussian_cost": {
+      "catch_rate": 0.9101065680776101,
+      "false_alarm_rate": 0.31425954313885346,
+      "workload_saved": 0.6738235163623715,
+      "cost_per_unit": 0.5059633474824083,
+      "flagged_share": 0.3261764836376286,
+      "catch_rate_ci": [
+        0.8869069578158799,
+        0.9343487139231963
+      ],
+      "false_alarm_rate_ci": [
+        0.26769124123003435,
+        0.35927001853510476
+      ],
+      "workload_saved_ci": [
+        0.62982020112528,
+        0.7196443283450152
+      ],
+      "cost_per_unit_ci": [
+        0.4419253996296844,
+        0.5658563785012504
+      ],
+      "categories_below_catch_target": 14
+    },
+    "savings_vs_best_blanket": 0.7933576936583796
+  },
+  "categories": {
+    "bottle": {
+      "n_calibration": 83,
+      "n_calibration_defective": 31,
+      "n_holdout": 42,
+      "n_holdout_defective": 32,
+      "patchcore_triage": {
+        "catch_rate": 0.96875,
+        "false_alarm_rate": 0.0,
+        "flagged_share": 0.019375,
+        "workload_saved": 0.980625,
+        "cost_per_unit": 0.081875,
+        "threshold": 2.271075487136841,
+        "catch_rate_ci": [
+          0.90625,
+          1.0
+        ],
+        "false_alarm_rate_ci": [
+          0.0,
+          0.0
+        ],
+        "workload_saved_ci": [
+          0.98,
+          0.981875
+        ],
+        "cost_per_unit_ci": [
+          0.02,
+          0.205625
+        ]
+      },
+      "patchcore_cost": {
+        "catch_rate": 0.96875,
+        "false_alarm_rate": 0.0,
+        "flagged_share": 0.019375,
+        "workload_saved": 0.980625,
+        "cost_per_unit": 0.081875,
+        "threshold": 2.271075487136841,
+        "catch_rate_ci": [
+          0.90625,
+          1.0
+        ],
+        "false_alarm_rate_ci": [
+          0.0,
+          0.0
+        ],
+        "workload_saved_ci": [
+          0.98,
+          0.981875
+        ],
+        "cost_per_unit_ci": [
+          0.02,
+          0.205625
+        ]
+      },
+      "gaussian_triage": {
+        "catch_rate": 0.96875,
+        "false_alarm_rate": 0.0,
+        "flagged_share": 0.019375,
+        "workload_saved": 0.980625,
+        "cost_per_unit": 0.081875,
+        "threshold": 59.051937103271484,
+        "catch_rate_ci": [
+          0.90625,
+          1.0
+        ],
+        "false_alarm_rate_ci": [
+          0.0,
+          0.0
+        ],
+        "workload_saved_ci": [
+          0.98,
+          0.981875
+        ],
+        "cost_per_unit_ci": [
+          0.02,
+          0.205625
+        ]
+      },
+      "gaussian_cost": {
+        "catch_rate": 0.96875,
+        "false_alarm_rate": 0.0,
+        "flagged_share": 0.019375,
+        "workload_saved": 0.980625,
+        "cost_per_unit": 0.081875,
+        "threshold": 59.051937103271484,
+        "catch_rate_ci": [
+          0.90625,
+          1.0
+        ],
+        "false_alarm_rate_ci": [
+          0.0,
+          0.0
+        ],
+        "workload_saved_ci": [
+          0.98,
+          0.981875
+        ],
+        "cost_per_unit_ci": [
+          0.02,
+          0.205625
+        ]
+      }
+    },
+    "cable": {
+      "n_calibration": 119,
+      "n_calibration_defective": 45,
+      "n_holdout": 76,
+      "n_holdout_defective": 47,
+      "patchcore_triage": {
+        "catch_rate": 1.0,
+        "false_alarm_rate": 0.5172413793103449,
+        "flagged_share": 0.526896551724138,
+        "workload_saved": 0.47310344827586204,
+        "cost_per_unit": 0.526896551724138,
+        "threshold": 2.454620599746704,
+        "catch_rate_ci": [
+          1.0,
+          1.0
+        ],
+        "false_alarm_rate_ci": [
+          0.3103448275862069,
+          0.6896551724137931
+        ],
+        "workload_saved_ci": [
+          0.3041379310344827,
+          0.6758620689655173
+        ],
+        "cost_per_unit_ci": [
+          0.3241379310344828,
+          0.6958620689655173
+        ]
+      },
+      "patchcore_cost": {
+        "catch_rate": 0.9787234042553191,
+        "false_alarm_rate": 0.034482758620689655,
+        "flagged_share": 0.053367571533382244,
+        "workload_saved": 0.9466324284666178,
+        "cost_per_unit": 0.09592076302274401,
+        "threshold": 2.6462011337280273,
+        "catch_rate_ci": [
+          0.9361702127659575,
+          1.0
+        ],
+        "false_alarm_rate_ci": [
+          0.0,
+          0.10344827586206896
+        ],
+        "workload_saved_ci": [
+          0.8786206896551724,
+          0.9812765957446808
+        ],
+        "cost_per_unit_ci": [
+          0.02,
+          0.21396918561995593
+        ]
+      },
+      "gaussian_triage": {
+        "catch_rate": 0.9361702127659575,
+        "false_alarm_rate": 0.1724137931034483,
+        "flagged_share": 0.18768892149669847,
+        "workload_saved": 0.8123110785033015,
+        "cost_per_unit": 0.31534849596478354,
+        "threshold": 63.27000045776367,
+        "catch_rate_ci": [
+          0.851063829787234,
+          1.0
+        ],
+        "false_alarm_rate_ci": [
+          0.034482758620689655,
+          0.3448275862068966
+        ],
+        "workload_saved_ci": [
+          0.6441966250917095,
+          0.9474941305942773
+        ],
+        "cost_per_unit_ci": [
+          0.13804842259721192,
+          0.5433191489361698
+        ]
+      },
+      "gaussian_cost": {
+        "catch_rate": 0.9361702127659575,
+        "false_alarm_rate": 0.1724137931034483,
+        "flagged_share": 0.18768892149669847,
+        "workload_saved": 0.8123110785033015,
+        "cost_per_unit": 0.31534849596478354,
+        "threshold": 63.27000045776367,
+        "catch_rate_ci": [
+          0.851063829787234,
+          1.0
+        ],
+        "false_alarm_rate_ci": [
+          0.034482758620689655,
+          0.3103448275862069
+        ],
+        "workload_saved_ci": [
+          0.6762876008804108,
+          0.9462175348495965
+        ],
+        "cost_per_unit_ci": [
+          0.13804842259721192,
+          0.5176522377109317
+        ]
+      }
+    },
+    "capsule": {
+      "n_calibration": 108,
+      "n_calibration_defective": 53,
+      "n_holdout": 68,
+      "n_holdout_defective": 56,
+      "patchcore_triage": {
+        "catch_rate": 1.0,
+        "false_alarm_rate": 0.5,
+        "flagged_share": 0.51,
+        "workload_saved": 0.49,
+        "cost_per_unit": 0.51,
+        "threshold": 1.3368809223175049,
+        "catch_rate_ci": [
+          1.0,
+          1.0
+        ],
+        "false_alarm_rate_ci": [
+          0.25,
+          0.75
+        ],
+        "workload_saved_ci": [
+          0.245,
+          0.735
+        ],
+        "cost_per_unit_ci": [
+          0.265,
+          0.755
+        ]
+      },
+      "patchcore_cost": {
+        "catch_rate": 0.9642857142857143,
+        "false_alarm_rate": 0.08333333333333333,
+        "flagged_share": 0.10095238095238096,
+        "workload_saved": 0.8990476190476191,
+        "cost_per_unit": 0.17238095238095236,
+        "threshold": 1.5275747776031494,
+        "catch_rate_ci": [
+          0.9107142857142857,
+          1.0
+        ],
+        "false_alarm_rate_ci": [
+          0.0,
+          0.25
+        ],
+        "workload_saved_ci": [
+          0.7353571428571428,
+          0.9814285714285714
+        ],
+        "cost_per_unit_ci": [
+          0.02,
+          0.3820238095238096
+        ]
+      },
+      "gaussian_triage": {
+        "catch_rate": 0.9642857142857143,
+        "false_alarm_rate": 0.08333333333333333,
+        "flagged_share": 0.10095238095238096,
+        "workload_saved": 0.8990476190476191,
+        "cost_per_unit": 0.17238095238095236,
+        "threshold": 59.75032424926758,
+        "catch_rate_ci": [
+          0.9107142857142857,
+          1.0
+        ],
+        "false_alarm_rate_ci": [
+          0.0,
+          0.25
+        ],
+        "workload_saved_ci": [
+          0.735,
+          0.9814285714285714
+        ],
+        "cost_per_unit_ci": [
+          0.02,
+          0.3710714285714286
+        ]
+      },
+      "gaussian_cost": {
+        "catch_rate": 0.9642857142857143,
+        "false_alarm_rate": 0.08333333333333333,
+        "flagged_share": 0.10095238095238096,
+        "workload_saved": 0.8990476190476191,
+        "cost_per_unit": 0.17238095238095236,
+        "threshold": 59.75032424926758,
+        "catch_rate_ci": [
+          0.9107142857142857,
+          1.0
+        ],
+        "false_alarm_rate_ci": [
+          0.0,
+          0.25
+        ],
+        "workload_saved_ci": [
+          0.7353571428571428,
+          0.9814285714285714
+        ],
+        "cost_per_unit_ci": [
+          0.02,
+          0.3820238095238096
+        ]
+      }
+    },
+    "carpet": {
+      "n_calibration": 112,
+      "n_calibration_defective": 42,
+      "n_holdout": 61,
+      "n_holdout_defective": 47,
+      "patchcore_triage": {
+        "catch_rate": 1.0,
+        "false_alarm_rate": 0.2857142857142857,
+        "flagged_share": 0.3,
+        "workload_saved": 0.7,
+        "cost_per_unit": 0.3,
+        "threshold": 1.7004082202911377,
+        "catch_rate_ci": [
+          1.0,
+          1.0
+        ],
+        "false_alarm_rate_ci": [
+          0.07142857142857142,
+          0.5
+        ],
+        "workload_saved_ci": [
+          0.49,
+          0.91
+        ],
+        "cost_per_unit_ci": [
+          0.09,
+          0.51
+        ]
+      },
+      "patchcore_cost": {
+        "catch_rate": 1.0,
+        "false_alarm_rate": 0.2857142857142857,
+        "flagged_share": 0.3,
+        "workload_saved": 0.7,
+        "cost_per_unit": 0.3,
+        "threshold": 1.7004082202911377,
+        "catch_rate_ci": [
+          1.0,
+          1.0
+        ],
+        "false_alarm_rate_ci": [
+          0.07142857142857142,
+          0.5
+        ],
+        "workload_saved_ci": [
+          0.49,
+          0.91
+        ],
+        "cost_per_unit_ci": [
+          0.09,
+          0.51
+        ]
+      },
+      "gaussian_triage": {
+        "catch_rate": 0.9787234042553191,
+        "false_alarm_rate": 0.8571428571428571,
+        "flagged_share": 0.8595744680851064,
+        "workload_saved": 0.1404255319148936,
+        "cost_per_unit": 0.9021276595744682,
+        "threshold": 14.911520004272461,
+        "catch_rate_ci": [
+          0.9361702127659575,
+          1.0
+        ],
+        "false_alarm_rate_ci": [
+          0.6428571428571429,
+          1.0
+        ],
+        "workload_saved_ci": [
+          0.0,
+          0.35
+        ],
+        "cost_per_unit_ci": [
+          0.72,
+          1.084255319148936
+        ]
+      },
+      "gaussian_cost": {
+        "catch_rate": 0.9787234042553191,
+        "false_alarm_rate": 0.8571428571428571,
+        "flagged_share": 0.8595744680851064,
+        "workload_saved": 0.1404255319148936,
+        "cost_per_unit": 0.9021276595744682,
+        "threshold": 15.340008735656738,
+        "catch_rate_ci": [
+          0.9361702127659575,
+          1.0
+        ],
+        "false_alarm_rate_ci": [
+          0.6428571428571429,
+          1.0
+        ],
+        "workload_saved_ci": [
+          0.0,
+          0.35042553191489356
+        ],
+        "cost_per_unit_ci": [
+          0.6921276595744682,
+          1.084255319148936
+        ]
+      }
+    },
+    "grid": {
+      "n_calibration": 90,
+      "n_calibration_defective": 27,
+      "n_holdout": 41,
+      "n_holdout_defective": 30,
+      "patchcore_triage": {
+        "catch_rate": 0.8666666666666667,
+        "false_alarm_rate": 0.18181818181818182,
+        "flagged_share": 0.19551515151515153,
+        "workload_saved": 0.8044848484848485,
+        "cost_per_unit": 0.46218181818181814,
+        "threshold": 1.8683342933654785,
+        "catch_rate_ci": [
+          0.7333333333333333,
+          0.9666666666666667
+        ],
+        "false_alarm_rate_ci": [
+          0.0,
+          0.45454545454545453
+        ],
+        "workload_saved_ci": [
+          0.5385454545454545,
+          0.9833333333333333
+        ],
+        "cost_per_unit_ci": [
+          0.15199999999999997,
+          0.8383636363636362
+        ]
+      },
+      "patchcore_cost": {
+        "catch_rate": 0.8666666666666667,
+        "false_alarm_rate": 0.18181818181818182,
+        "flagged_share": 0.19551515151515153,
+        "workload_saved": 0.8044848484848485,
+        "cost_per_unit": 0.46218181818181814,
+        "threshold": 1.8683342933654785,
+        "catch_rate_ci": [
+          0.7333333333333333,
+          0.9666666666666667
+        ],
+        "false_alarm_rate_ci": [
+          0.0,
+          0.45454545454545453
+        ],
+        "workload_saved_ci": [
+          0.5378621212121212,
+          0.9833333333333333
+        ],
+        "cost_per_unit_ci": [
+          0.17509090909090907,
+          0.8152727272727274
+        ]
+      },
+      "gaussian_triage": {
+        "catch_rate": 0.8666666666666667,
+        "false_alarm_rate": 0.9090909090909091,
+        "flagged_share": 0.9082424242424242,
+        "workload_saved": 0.09175757575757582,
+        "cost_per_unit": 1.174909090909091,
+        "threshold": 9.89578914642334,
+        "catch_rate_ci": [
+          0.7333333333333333,
+          0.9666666666666667
+        ],
+        "false_alarm_rate_ci": [
+          0.7272727272727273,
+          1.0
+        ],
+        "workload_saved_ci": [
+          0.0013333333333332975,
+          0.2706060606060605
+        ],
+        "cost_per_unit_ci": [
+          0.8878181818181818,
+          1.4619999999999997
+        ]
+      },
+      "gaussian_cost": {
+        "catch_rate": 0.8666666666666667,
+        "false_alarm_rate": 0.9090909090909091,
+        "flagged_share": 0.9082424242424242,
+        "workload_saved": 0.09175757575757582,
+        "cost_per_unit": 1.174909090909091,
+        "threshold": 9.89578914642334,
+        "catch_rate_ci": [
+          0.7333333333333333,
+          0.9666666666666667
+        ],
+        "false_alarm_rate_ci": [
+          0.7272727272727273,
+          1.0
+        ],
+        "workload_saved_ci": [
+          0.0006666666666667043,
+          0.2712893939393939
+        ],
+        "cost_per_unit_ci": [
+          0.8647272727272728,
+          1.4619999999999997
+        ]
+      }
+    },
+    "hazelnut": {
+      "n_calibration": 132,
+      "n_calibration_defective": 34,
+      "n_holdout": 56,
+      "n_holdout_defective": 36,
+      "patchcore_triage": {
+        "catch_rate": 0.9722222222222222,
+        "false_alarm_rate": 0.0,
+        "flagged_share": 0.019444444444444445,
+        "workload_saved": 0.9805555555555555,
+        "cost_per_unit": 0.07500000000000002,
+        "threshold": 2.812307357788086,
+        "catch_rate_ci": [
+          0.9166666666666666,
+          1.0
+        ],
+        "false_alarm_rate_ci": [
+          0.0,
+          0.0
+        ],
+        "workload_saved_ci": [
+          0.98,
+          0.9816666666666667
+        ],
+        "cost_per_unit_ci": [
+          0.02,
+          0.18500000000000008
+        ]
+      },
+      "patchcore_cost": {
+        "catch_rate": 0.9722222222222222,
+        "false_alarm_rate": 0.0,
+        "flagged_share": 0.019444444444444445,
+        "workload_saved": 0.9805555555555555,
+        "cost_per_unit": 0.07500000000000002,
+        "threshold": 2.812307357788086,
+        "catch_rate_ci": [
+          0.9166666666666666,
+          1.0
+        ],
+        "false_alarm_rate_ci": [
+          0.0,
+          0.0
+        ],
+        "workload_saved_ci": [
+          0.98,
+          0.9816666666666667
+        ],
+        "cost_per_unit_ci": [
+          0.02,
+          0.18500000000000008
+        ]
+      },
+      "gaussian_triage": {
+        "catch_rate": 0.9444444444444444,
+        "false_alarm_rate": 0.2,
+        "flagged_share": 0.2148888888888889,
+        "workload_saved": 0.7851111111111111,
+        "cost_per_unit": 0.32600000000000007,
+        "threshold": 17.690473556518555,
+        "catch_rate_ci": [
+          0.8611111111111112,
+          1.0
+        ],
+        "false_alarm_rate_ci": [
+          0.05,
+          0.4
+        ],
+        "workload_saved_ci": [
+          0.5891111111111111,
+          0.9326666666666666
+        ],
+        "cost_per_unit_ci": [
+          0.11800000000000001,
+          0.5519999999999999
+        ]
+      },
+      "gaussian_cost": {
+        "catch_rate": 0.9444444444444444,
+        "false_alarm_rate": 0.2,
+        "flagged_share": 0.2148888888888889,
+        "workload_saved": 0.7851111111111111,
+        "cost_per_unit": 0.32600000000000007,
+        "threshold": 17.690473556518555,
+        "catch_rate_ci": [
+          0.8611111111111112,
+          1.0
+        ],
+        "false_alarm_rate_ci": [
+          0.05,
+          0.4
+        ],
+        "workload_saved_ci": [
+          0.5885555555555555,
+          0.9326666666666666
+        ],
+        "cost_per_unit_ci": [
+          0.11800000000000001,
+          0.5889999999999999
+        ]
+      }
+    },
+    "leather": {
+      "n_calibration": 109,
+      "n_calibration_defective": 44,
+      "n_holdout": 64,
+      "n_holdout_defective": 48,
+      "patchcore_triage": {
+        "catch_rate": 0.9791666666666666,
+        "false_alarm_rate": 0.0,
+        "flagged_share": 0.019583333333333335,
+        "workload_saved": 0.9804166666666667,
+        "cost_per_unit": 0.061250000000000075,
+        "threshold": 2.061475992202759,
+        "catch_rate_ci": [
+          0.9375,
+          1.0
+        ],
+        "false_alarm_rate_ci": [
+          0.0,
+          0.0
+        ],
+        "workload_saved_ci": [
+          0.98,
+          0.98125
+        ],
+        "cost_per_unit_ci": [
+          0.02,
+          0.14375
+        ]
+      },
+      "patchcore_cost": {
+        "catch_rate": 0.9791666666666666,
+        "false_alarm_rate": 0.0,
+        "flagged_share": 0.019583333333333335,
+        "workload_saved": 0.9804166666666667,
+        "cost_per_unit": 0.061250000000000075,
+        "threshold": 2.061475992202759,
+        "catch_rate_ci": [
+          0.9375,
+          1.0
+        ],
+        "false_alarm_rate_ci": [
+          0.0,
+          0.0
+        ],
+        "workload_saved_ci": [
+          0.98,
+          0.98125
+        ],
+        "cost_per_unit_ci": [
+          0.02,
+          0.14375
+        ]
+      },
+      "gaussian_triage": {
+        "catch_rate": 1.0,
+        "false_alarm_rate": 0.75,
+        "flagged_share": 0.755,
+        "workload_saved": 0.245,
+        "cost_per_unit": 0.755,
+        "threshold": 19.823209762573242,
+        "catch_rate_ci": [
+          1.0,
+          1.0
+        ],
+        "false_alarm_rate_ci": [
+          0.5,
+          0.9375
+        ],
+        "workload_saved_ci": [
+          0.06125000000000003,
+          0.49
+        ],
+        "cost_per_unit_ci": [
+          0.51,
+          0.93875
+        ]
+      },
+      "gaussian_cost": {
+        "catch_rate": 1.0,
+        "false_alarm_rate": 0.75,
+        "flagged_share": 0.755,
+        "workload_saved": 0.245,
+        "cost_per_unit": 0.755,
+        "threshold": 19.823209762573242,
+        "catch_rate_ci": [
+          1.0,
+          1.0
+        ],
+        "false_alarm_rate_ci": [
+          0.5625,
+          0.9375
+        ],
+        "workload_saved_ci": [
+          0.06125000000000003,
+          0.42874999999999996
+        ],
+        "cost_per_unit_ci": [
+          0.57125,
+          0.93875
+        ]
+      }
+    },
+    "metal_nut": {
+      "n_calibration": 100,
+      "n_calibration_defective": 45,
+      "n_holdout": 59,
+      "n_holdout_defective": 48,
+      "patchcore_triage": {
+        "catch_rate": 1.0,
+        "false_alarm_rate": 0.0,
+        "flagged_share": 0.02,
+        "workload_saved": 0.98,
+        "cost_per_unit": 0.02,
+        "threshold": 2.404667377471924,
+        "catch_rate_ci": [
+          1.0,
+          1.0
+        ],
+        "false_alarm_rate_ci": [
+          0.0,
+          0.0
+        ],
+        "workload_saved_ci": [
+          0.98,
+          0.98
+        ],
+        "cost_per_unit_ci": [
+          0.02,
+          0.02
+        ]
+      },
+      "patchcore_cost": {
+        "catch_rate": 1.0,
+        "false_alarm_rate": 0.0,
+        "flagged_share": 0.02,
+        "workload_saved": 0.98,
+        "cost_per_unit": 0.02,
+        "threshold": 2.404667377471924,
+        "catch_rate_ci": [
+          1.0,
+          1.0
+        ],
+        "false_alarm_rate_ci": [
+          0.0,
+          0.0
+        ],
+        "workload_saved_ci": [
+          0.98,
+          0.98
+        ],
+        "cost_per_unit_ci": [
+          0.02,
+          0.02
+        ]
+      },
+      "gaussian_triage": {
+        "catch_rate": 0.9791666666666666,
+        "false_alarm_rate": 0.9090909090909091,
+        "flagged_share": 0.9104924242424242,
+        "workload_saved": 0.08950757575757584,
+        "cost_per_unit": 0.9521590909090909,
+        "threshold": 10.309735298156738,
+        "catch_rate_ci": [
+          0.9375,
+          1.0
+        ],
+        "false_alarm_rate_ci": [
+          0.7272727272727273,
+          1.0
+        ],
+        "workload_saved_ci": [
+          0.0,
+          0.26810606060606057
+        ],
+        "cost_per_unit_ci": [
+          0.7327272727272728,
+          1.1173238636363634
+        ]
+      },
+      "gaussian_cost": {
+        "catch_rate": 0.8958333333333334,
+        "false_alarm_rate": 0.2727272727272727,
+        "flagged_share": 0.28518939393939396,
+        "workload_saved": 0.7148106060606061,
+        "cost_per_unit": 0.49352272727272717,
+        "threshold": 11.487992286682129,
+        "catch_rate_ci": [
+          0.8119791666666671,
+          0.9588541666666662
+        ],
+        "false_alarm_rate_ci": [
+          0.0,
+          0.5454545454545454
+        ],
+        "workload_saved_ci": [
+          0.4462878787878788,
+          0.9804270833333334
+        ],
+        "cost_per_unit_ci": [
+          0.2262499999999999,
+          0.8367045454545454
+        ]
+      }
+    },
+    "pill": {
+      "n_calibration": 134,
+      "n_calibration_defective": 68,
+      "n_holdout": 86,
+      "n_holdout_defective": 73,
+      "patchcore_triage": {
+        "catch_rate": 0.9726027397260274,
+        "false_alarm_rate": 0.38461538461538464,
+        "flagged_share": 0.3963751317175975,
+        "workload_saved": 0.6036248682824026,
+        "cost_per_unit": 0.4511696522655427,
+        "threshold": 1.9478914737701416,
+        "catch_rate_ci": [
+          0.9315068493150684,
+          1.0
+        ],
+        "false_alarm_rate_ci": [
+          0.15384615384615385,
+          0.6153846153846154
+        ],
+        "workload_saved_ci": [
+          0.3769230769230769,
+          0.8303266596417281
+        ],
+        "cost_per_unit_ci": [
+          0.19789251844046374,
+          0.7317197049525815
+        ]
+      },
+      "patchcore_cost": {
+        "catch_rate": 0.8767123287671232,
+        "false_alarm_rate": 0.15384615384615385,
+        "flagged_share": 0.16830347734457324,
+        "workload_saved": 0.8316965226554267,
+        "cost_per_unit": 0.4148788198103268,
+        "threshold": 2.064321994781494,
+        "catch_rate_ci": [
+          0.7945205479452054,
+          0.9452054794520548
+        ],
+        "false_alarm_rate_ci": [
+          0.0,
+          0.38461538461538464
+        ],
+        "workload_saved_ci": [
+          0.6058097997892519,
+          0.983013698630137
+        ],
+        "cost_per_unit_ci": [
+          0.18273972602739724,
+          0.6742908324552159
+        ]
+      },
+      "gaussian_triage": {
+        "catch_rate": 1.0,
+        "false_alarm_rate": 0.6153846153846154,
+        "flagged_share": 0.6230769230769231,
+        "workload_saved": 0.3769230769230769,
+        "cost_per_unit": 0.6230769230769231,
+        "threshold": 62.284908294677734,
+        "catch_rate_ci": [
+          1.0,
+          1.0
+        ],
+        "false_alarm_rate_ci": [
+          0.38461538461538464,
+          0.8461538461538461
+        ],
+        "workload_saved_ci": [
+          0.15076923076923077,
+          0.6030769230769231
+        ],
+        "cost_per_unit_ci": [
+          0.39692307692307693,
+          0.8492307692307692
+        ]
+      },
+      "gaussian_cost": {
+        "catch_rate": 0.7671232876712328,
+        "false_alarm_rate": 0.07692307692307693,
+        "flagged_share": 0.09072708113804004,
+        "workload_saved": 0.9092729188619599,
+        "cost_per_unit": 0.5564805057955744,
+        "threshold": 70.20043182373047,
+        "catch_rate_ci": [
+          0.6712328767123288,
+          0.863013698630137
+        ],
+        "false_alarm_rate_ci": [
+          0.0,
+          0.23076923076923078
+        ],
+        "workload_saved_ci": [
+          0.7579557428872498,
+          0.986027397260274
+        ],
+        "cost_per_unit_ci": [
+          0.3453298208640676,
+          0.7946048472075871
+        ]
+      }
+    },
+    "screw": {
+      "n_calibration": 142,
+      "n_calibration_defective": 58,
+      "n_holdout": 82,
+      "n_holdout_defective": 61,
+      "patchcore_triage": {
+        "catch_rate": 1.0,
+        "false_alarm_rate": 0.5238095238095238,
+        "flagged_share": 0.5333333333333333,
+        "workload_saved": 0.4666666666666667,
+        "cost_per_unit": 0.5333333333333333,
+        "threshold": 1.7960542440414429,
+        "catch_rate_ci": [
+          1.0,
+          1.0
+        ],
+        "false_alarm_rate_ci": [
+          0.2857142857142857,
+          0.7142857142857143
+        ],
+        "workload_saved_ci": [
+          0.28,
+          0.7
+        ],
+        "cost_per_unit_ci": [
+          0.3,
+          0.72
+        ]
+      },
+      "patchcore_cost": {
+        "catch_rate": 0.9508196721311475,
+        "false_alarm_rate": 0.2857142857142857,
+        "flagged_share": 0.29901639344262293,
+        "workload_saved": 0.7009836065573771,
+        "cost_per_unit": 0.39737704918032796,
+        "threshold": 1.8336193561553955,
+        "catch_rate_ci": [
+          0.8852459016393442,
+          1.0
+        ],
+        "false_alarm_rate_ci": [
+          0.09523809523809523,
+          0.47619047619047616
+        ],
+        "workload_saved_ci": [
+          0.5139890710382514,
+          0.8876502732240437
+        ],
+        "cost_per_unit_ci": [
+          0.19245901639344265,
+          0.6347540983606557
+        ]
+      },
+      "gaussian_triage": {
+        "catch_rate": 1.0,
+        "false_alarm_rate": 0.9523809523809523,
+        "flagged_share": 0.9533333333333333,
+        "workload_saved": 0.046666666666666745,
+        "cost_per_unit": 0.9533333333333333,
+        "threshold": 11.435385704040527,
+        "catch_rate_ci": [
+          1.0,
+          1.0
+        ],
+        "false_alarm_rate_ci": [
+          0.8571428571428571,
+          1.0
+        ],
+        "workload_saved_ci": [
+          0.0,
+          0.14
+        ],
+        "cost_per_unit_ci": [
+          0.86,
+          1.0
+        ]
+      },
+      "gaussian_cost": {
+        "catch_rate": 0.8524590163934426,
+        "false_alarm_rate": 0.5714285714285714,
+        "flagged_share": 0.5770491803278688,
+        "workload_saved": 0.4229508196721312,
+        "cost_per_unit": 0.8721311475409836,
+        "threshold": 13.24109935760498,
+        "catch_rate_ci": [
+          0.7704918032786885,
+          0.9344262295081968
+        ],
+        "false_alarm_rate_ci": [
+          0.3797619047619058,
+          0.7619047619047619
+        ],
+        "workload_saved_ci": [
+          0.2353005464480875,
+          0.613636612021857
+        ],
+        "cost_per_unit_ci": [
+          0.588087431693989,
+          1.1566311475409832
+        ]
+      }
+    },
+    "tile": {
+      "n_calibration": 103,
+      "n_calibration_defective": 41,
+      "n_holdout": 60,
+      "n_holdout_defective": 43,
+      "patchcore_triage": {
+        "catch_rate": 0.8837209302325582,
+        "false_alarm_rate": 0.0,
+        "flagged_share": 0.017674418604651163,
+        "workload_saved": 0.9823255813953489,
+        "cost_per_unit": 0.2502325581395348,
+        "threshold": 2.3257486820220947,
+        "catch_rate_ci": [
+          0.7674418604651163,
+          0.9767441860465116
+        ],
+        "false_alarm_rate_ci": [
+          0.0,
+          0.0
+        ],
+        "workload_saved_ci": [
+          0.9804651162790697,
+          0.9846511627906976
+        ],
+        "cost_per_unit_ci": [
+          0.06604651162790706,
+          0.4804651162790696
+        ]
+      },
+      "patchcore_cost": {
+        "catch_rate": 0.8837209302325582,
+        "false_alarm_rate": 0.0,
+        "flagged_share": 0.017674418604651163,
+        "workload_saved": 0.9823255813953489,
+        "cost_per_unit": 0.2502325581395348,
+        "threshold": 2.3257486820220947,
+        "catch_rate_ci": [
+          0.7906976744186046,
+          0.9767441860465116
+        ],
+        "false_alarm_rate_ci": [
+          0.0,
+          0.0
+        ],
+        "workload_saved_ci": [
+          0.9804651162790697,
+          0.9841860465116279
+        ],
+        "cost_per_unit_ci": [
+          0.06604651162790706,
+          0.43441860465116294
+        ]
+      },
+      "gaussian_triage": {
+        "catch_rate": 0.9069767441860465,
+        "false_alarm_rate": 0.0,
+        "flagged_share": 0.01813953488372093,
+        "workload_saved": 0.9818604651162791,
+        "cost_per_unit": 0.20418604651162803,
+        "threshold": 13.90233039855957,
+        "catch_rate_ci": [
+          0.813953488372093,
+          0.9767441860465116
+        ],
+        "false_alarm_rate_ci": [
+          0.0,
+          0.0
+        ],
+        "workload_saved_ci": [
+          0.9804651162790697,
+          0.9837209302325581
+        ],
+        "cost_per_unit_ci": [
+          0.06604651162790706,
+          0.3883720930232558
+        ]
+      },
+      "gaussian_cost": {
+        "catch_rate": 0.9069767441860465,
+        "false_alarm_rate": 0.0,
+        "flagged_share": 0.01813953488372093,
+        "workload_saved": 0.9818604651162791,
+        "cost_per_unit": 0.20418604651162803,
+        "threshold": 13.90233039855957,
+        "catch_rate_ci": [
+          0.813953488372093,
+          1.0
+        ],
+        "false_alarm_rate_ci": [
+          0.0,
+          0.0
+        ],
+        "workload_saved_ci": [
+          0.98,
+          0.9837209302325581
+        ],
+        "cost_per_unit_ci": [
+          0.02,
+          0.3883720930232558
+        ]
+      }
+    },
+    "toothbrush": {
+      "n_calibration": 33,
+      "n_calibration_defective": 15,
+      "n_holdout": 21,
+      "n_holdout_defective": 15,
+      "patchcore_triage": {
+        "catch_rate": 0.8,
+        "false_alarm_rate": 0.0,
+        "flagged_share": 0.016,
+        "workload_saved": 0.984,
+        "cost_per_unit": 0.4159999999999999,
+        "threshold": 2.1880850791931152,
+        "catch_rate_ci": [
+          0.6,
+          1.0
+        ],
+        "false_alarm_rate_ci": [
+          0.0,
+          0.0
+        ],
+        "workload_saved_ci": [
+          0.98,
+          0.988
+        ],
+        "cost_per_unit_ci": [
+          0.02,
+          0.812
+        ]
+      },
+      "patchcore_cost": {
+        "catch_rate": 0.8,
+        "false_alarm_rate": 0.0,
+        "flagged_share": 0.016,
+        "workload_saved": 0.984,
+        "cost_per_unit": 0.4159999999999999,
+        "threshold": 2.1880850791931152,
+        "catch_rate_ci": [
+          0.5983333333333348,
+          1.0
+        ],
+        "false_alarm_rate_ci": [
+          0.0,
+          0.0
+        ],
+        "workload_saved_ci": [
+          0.98,
+          0.9880333333333333
+        ],
+        "cost_per_unit_ci": [
+          0.02,
+          0.815299999999997
+        ]
+      },
+      "gaussian_triage": {
+        "catch_rate": 1.0,
+        "false_alarm_rate": 0.8333333333333334,
+        "flagged_share": 0.8366666666666667,
+        "workload_saved": 0.16333333333333333,
+        "cost_per_unit": 0.8366666666666667,
+        "threshold": 3.7456579208374023,
+        "catch_rate_ci": [
+          1.0,
+          1.0
+        ],
+        "false_alarm_rate_ci": [
+          0.5,
+          1.0
+        ],
+        "workload_saved_ci": [
+          0.0,
+          0.49
+        ],
+        "cost_per_unit_ci": [
+          0.51,
+          1.0
+        ]
+      },
+      "gaussian_cost": {
+        "catch_rate": 0.9333333333333333,
+        "false_alarm_rate": 0.0,
+        "flagged_share": 0.018666666666666668,
+        "workload_saved": 0.9813333333333333,
+        "cost_per_unit": 0.15199999999999997,
+        "threshold": 5.301222324371338,
+        "catch_rate_ci": [
+          0.8,
+          1.0
+        ],
+        "false_alarm_rate_ci": [
+          0.0,
+          0.0
+        ],
+        "workload_saved_ci": [
+          0.98,
+          0.984
+        ],
+        "cost_per_unit_ci": [
+          0.02,
+          0.4159999999999999
+        ]
+      }
+    },
+    "transistor": {
+      "n_calibration": 93,
+      "n_calibration_defective": 20,
+      "n_holdout": 50,
+      "n_holdout_defective": 20,
+      "patchcore_triage": {
+        "catch_rate": 1.0,
+        "false_alarm_rate": 0.03333333333333333,
+        "flagged_share": 0.05266666666666667,
+        "workload_saved": 0.9473333333333334,
+        "cost_per_unit": 0.05266666666666667,
+        "threshold": 2.202643632888794,
+        "catch_rate_ci": [
+          1.0,
+          1.0
+        ],
+        "false_alarm_rate_ci": [
+          0.0,
+          0.13333333333333333
+        ],
+        "workload_saved_ci": [
+          0.8493333333333334,
+          0.98
+        ],
+        "cost_per_unit_ci": [
+          0.02,
+          0.15066666666666664
+        ]
+      },
+      "patchcore_cost": {
+        "catch_rate": 1.0,
+        "false_alarm_rate": 0.03333333333333333,
+        "flagged_share": 0.05266666666666667,
+        "workload_saved": 0.9473333333333334,
+        "cost_per_unit": 0.05266666666666667,
+        "threshold": 2.202643632888794,
+        "catch_rate_ci": [
+          1.0,
+          1.0
+        ],
+        "false_alarm_rate_ci": [
+          0.0,
+          0.1
+        ],
+        "workload_saved_ci": [
+          0.882,
+          0.98
+        ],
+        "cost_per_unit_ci": [
+          0.02,
+          0.11800000000000001
+        ]
+      },
+      "gaussian_triage": {
+        "catch_rate": 0.8,
+        "false_alarm_rate": 0.13333333333333333,
+        "flagged_share": 0.14666666666666667,
+        "workload_saved": 0.8533333333333333,
+        "cost_per_unit": 0.5466666666666666,
+        "threshold": 57.182106018066406,
+        "catch_rate_ci": [
+          0.6,
+          0.95
+        ],
+        "false_alarm_rate_ci": [
+          0.03333333333333333,
+          0.26666666666666666
+        ],
+        "workload_saved_ci": [
+          0.7226666666666667,
+          0.9533333333333334
+        ],
+        "cost_per_unit_ci": [
+          0.1843333333333334,
+          0.9108166666666659
+        ]
+      },
+      "gaussian_cost": {
+        "catch_rate": 0.75,
+        "false_alarm_rate": 0.03333333333333333,
+        "flagged_share": 0.04766666666666666,
+        "workload_saved": 0.9523333333333334,
+        "cost_per_unit": 0.5476666666666666,
+        "threshold": 60.66011428833008,
+        "catch_rate_ci": [
+          0.55,
+          0.9
+        ],
+        "false_alarm_rate_ci": [
+          0.0,
+          0.1
+        ],
+        "workload_saved_ci": [
+          0.886,
+          0.988
+        ],
+        "cost_per_unit_ci": [
+          0.21799999999999997,
+          0.9436666666666665
+        ]
+      }
+    },
+    "wood": {
+      "n_calibration": 87,
+      "n_calibration_defective": 29,
+      "n_holdout": 41,
+      "n_holdout_defective": 31,
+      "patchcore_triage": {
+        "catch_rate": 0.967741935483871,
+        "false_alarm_rate": 0.2,
+        "flagged_share": 0.21535483870967742,
+        "workload_saved": 0.7846451612903226,
+        "cost_per_unit": 0.27987096774193543,
+        "threshold": 2.1903324127197266,
+        "catch_rate_ci": [
+          0.9032258064516129,
+          1.0
+        ],
+        "false_alarm_rate_ci": [
+          0.0,
+          0.5
+        ],
+        "workload_saved_ci": [
+          0.4912903225806452,
+          0.9812903225806452
+        ],
+        "cost_per_unit_ci": [
+          0.02,
+          0.5694838709677419
+        ]
+      },
+      "patchcore_cost": {
+        "catch_rate": 0.967741935483871,
+        "false_alarm_rate": 0.2,
+        "flagged_share": 0.21535483870967742,
+        "workload_saved": 0.7846451612903226,
+        "cost_per_unit": 0.27987096774193543,
+        "threshold": 2.1903324127197266,
+        "catch_rate_ci": [
+          0.9032258064516129,
+          1.0
+        ],
+        "false_alarm_rate_ci": [
+          0.0,
+          0.5
+        ],
+        "workload_saved_ci": [
+          0.49064516129032254,
+          0.9806451612903225
+        ],
+        "cost_per_unit_ci": [
+          0.02,
+          0.5738709677419355
+        ]
+      },
+      "gaussian_triage": {
+        "catch_rate": 0.9032258064516129,
+        "false_alarm_rate": 0.6,
+        "flagged_share": 0.6060645161290322,
+        "workload_saved": 0.3939354838709678,
+        "cost_per_unit": 0.7996129032258065,
+        "threshold": 56.053688049316406,
+        "catch_rate_ci": [
+          0.8064516129032258,
+          1.0
+        ],
+        "false_alarm_rate_ci": [
+          0.3,
+          0.9
+        ],
+        "workload_saved_ci": [
+          0.09993548387096773,
+          0.6885806451612904
+        ],
+        "cost_per_unit_ci": [
+          0.4417419354838711,
+          1.157483870967742
+        ]
+      },
+      "gaussian_cost": {
+        "catch_rate": 0.9032258064516129,
+        "false_alarm_rate": 0.6,
+        "flagged_share": 0.6060645161290322,
+        "workload_saved": 0.3939354838709678,
+        "cost_per_unit": 0.7996129032258065,
+        "threshold": 56.053688049316406,
+        "catch_rate_ci": [
+          0.8064516129032258,
+          1.0
+        ],
+        "false_alarm_rate_ci": [
+          0.3,
+          0.9
+        ],
+        "workload_saved_ci": [
+          0.09993548387096773,
+          0.6885967741935484
+        ],
+        "cost_per_unit_ci": [
+          0.41200000000000003,
+          1.1532064516129032
+        ]
+      }
+    },
+    "zipper": {
+      "n_calibration": 122,
+      "n_calibration_defective": 58,
+      "n_holdout": 77,
+      "n_holdout_defective": 61,
+      "patchcore_triage": {
+        "catch_rate": 1.0,
+        "false_alarm_rate": 0.3125,
+        "flagged_share": 0.32625000000000004,
+        "workload_saved": 0.67375,
+        "cost_per_unit": 0.32625000000000004,
+        "threshold": 1.42697274684906,
+        "catch_rate_ci": [
+          1.0,
+          1.0
+        ],
+        "false_alarm_rate_ci": [
+          0.125,
+          0.5625
+        ],
+        "workload_saved_ci": [
+          0.42874999999999996,
+          0.8575
+        ],
+        "cost_per_unit_ci": [
+          0.1425,
+          0.57125
+        ]
+      },
+      "patchcore_cost": {
+        "catch_rate": 1.0,
+        "false_alarm_rate": 0.0,
+        "flagged_share": 0.02,
+        "workload_saved": 0.98,
+        "cost_per_unit": 0.02,
+        "threshold": 1.6459665298461914,
+        "catch_rate_ci": [
+          1.0,
+          1.0
+        ],
+        "false_alarm_rate_ci": [
+          0.0,
+          0.0
+        ],
+        "workload_saved_ci": [
+          0.98,
+          0.98
+        ],
+        "cost_per_unit_ci": [
+          0.02,
+          0.02
+        ]
+      },
+      "gaussian_triage": {
+        "catch_rate": 1.0,
+        "false_alarm_rate": 0.3125,
+        "flagged_share": 0.32625000000000004,
+        "workload_saved": 0.67375,
+        "cost_per_unit": 0.32625000000000004,
+        "threshold": 43.78937530517578,
+        "catch_rate_ci": [
+          1.0,
+          1.0
+        ],
+        "false_alarm_rate_ci": [
+          0.125,
+          0.5625
+        ],
+        "workload_saved_ci": [
+          0.42874999999999996,
+          0.8575
+        ],
+        "cost_per_unit_ci": [
+          0.1425,
+          0.57125
+        ]
+      },
+      "gaussian_cost": {
+        "catch_rate": 0.9836065573770492,
+        "false_alarm_rate": 0.1875,
+        "flagged_share": 0.20342213114754099,
+        "workload_saved": 0.796577868852459,
+        "cost_per_unit": 0.23620901639344266,
+        "threshold": 44.787296295166016,
+        "catch_rate_ci": [
+          0.9508196721311475,
+          1.0
+        ],
+        "false_alarm_rate_ci": [
+          0.0,
+          0.375
+        ],
+        "workload_saved_ci": [
+          0.6125,
+          0.98
+        ],
+        "cost_per_unit_ci": [
+          0.052459016393442665,
+          0.4524180327868853
+        ]
+      }
+    }
+  },
+  "sensitivity": [
+    {
+      "defect_rate": 0.005,
+      "cost_ratio": 10,
+      "model_cost": 0.03561848808037245,
+      "inspect_all": 1.0,
+      "inspect_none": 0.05,
+      "saving_vs_best_blanket": 0.2876302383925511
+    },
+    {
+      "defect_rate": 0.005,
+      "cost_ratio": 25,
+      "model_cost": 0.048721160471977804,
+      "inspect_all": 1.0,
+      "inspect_none": 0.125,
+      "saving_vs_best_blanket": 0.6102307162241776
+    },
+    {
+      "defect_rate": 0.005,
+      "cost_ratio": 50,
+      "model_cost": 0.06268001289144079,
+      "inspect_all": 1.0,
+      "inspect_none": 0.25,
+      "saving_vs_best_blanket": 0.7492799484342368
+    },
+    {
+      "defect_rate": 0.005,
+      "cost_ratio": 100,
+      "model_cost": 0.08715080652143431,
+      "inspect_all": 1.0,
+      "inspect_none": 0.5,
+      "saving_vs_best_blanket": 0.8256983869571314
+    },
+    {
+      "defect_rate": 0.005,
+      "cost_ratio": 250,
+      "model_cost": 0.1503746546047349,
+      "inspect_all": 1.0,
+      "inspect_none": 1.25,
+      "saving_vs_best_blanket": 0.8496253453952651
+    },
+    {
+      "defect_rate": 0.005,
+      "cost_ratio": 1000,
+      "model_cost": 0.3667125690862697,
+      "inspect_all": 1.0,
+      "inspect_none": 5.0,
+      "saving_vs_best_blanket": 0.6332874309137303
+    },
+    {
+      "defect_rate": 0.01,
+      "cost_ratio": 10,
+      "model_cost": 0.046663626013624254,
+      "inspect_all": 1.0,
+      "inspect_none": 0.1,
+      "saving_vs_best_blanket": 0.5333637398637574
+    },
+    {
+      "defect_rate": 0.01,
+      "cost_ratio": 25,
+      "model_cost": 0.06694771462843781,
+      "inspect_all": 1.0,
+      "inspect_none": 0.25,
+      "saving_vs_best_blanket": 0.7322091414862488
+    },
+    {
+      "defect_rate": 0.01,
+      "cost_ratio": 50,
+      "model_cost": 0.09151989260534162,
+      "inspect_all": 1.0,
+      "inspect_none": 0.5,
+      "saving_vs_best_blanket": 0.8169602147893168
+    },
+    {
+      "defect_rate": 0.01,
+      "cost_ratio": 100,
+      "model_cost": 0.12613720550494656,
+      "inspect_all": 1.0,
+      "inspect_none": 1.0,
+      "saving_vs_best_blanket": 0.8738627944950534
+    },
+    {
+      "defect_rate": 0.01,
+      "cost_ratio": 250,
+      "model_cost": 0.22438161017902344,
+      "inspect_all": 1.0,
+      "inspect_none": 2.5,
+      "saving_vs_best_blanket": 0.7756183898209765
+    },
+    {
+      "defect_rate": 0.01,
+      "cost_ratio": 1000,
+      "model_cost": 0.580076738212661,
+      "inspect_all": 1.0,
+      "inspect_none": 10.0,
+      "saving_vs_best_blanket": 0.41992326178733896
+    },
+    {
+      "defect_rate": 0.02,
+      "cost_ratio": 10,
+      "model_cost": 0.069465012991239,
+      "inspect_all": 1.0,
+      "inspect_none": 0.2,
+      "saving_vs_best_blanket": 0.652674935043805
+    },
+    {
+      "defect_rate": 0.02,
+      "cost_ratio": 25,
+      "model_cost": 0.10025806477315628,
+      "inspect_all": 1.0,
+      "inspect_none": 0.5,
+      "saving_vs_best_blanket": 0.7994838704536874
+    },
+    {
+      "defect_rate": 0.02,
+      "cost_ratio": 50,
+      "model_cost": 0.13496410241903803,
+      "inspect_all": 1.0,
+      "inspect_none": 1.0,
+      "saving_vs_best_blanket": 0.865035897580962
+    },
+    {
+      "defect_rate": 0.02,
+      "cost_ratio": 100,
+      "model_cost": 0.2066423063416204,
+      "inspect_all": 1.0,
+      "inspect_none": 2.0,
+      "saving_vs_best_blanket": 0.7933576936583796
+    },
+    {
+      "defect_rate": 0.02,
+      "cost_ratio": 250,
+      "model_cost": 0.3793684934374579,
+      "inspect_all": 1.0,
+      "inspect_none": 5.0,
+      "saving_vs_best_blanket": 0.6206315065625421
+    },
+    {
+      "defect_rate": 0.02,
+      "cost_ratio": 1000,
+      "model_cost": 0.990100064382933,
+      "inspect_all": 1.0,
+      "inspect_none": 20.0,
+      "saving_vs_best_blanket": 0.009899935617067035
+    },
+    {
+      "defect_rate": 0.05,
+      "cost_ratio": 10,
+      "model_cost": 0.12647258127660024,
+      "inspect_all": 1.0,
+      "inspect_none": 0.5,
+      "saving_vs_best_blanket": 0.7470548374467996
+    },
+    {
+      "defect_rate": 0.05,
+      "cost_ratio": 25,
+      "model_cost": 0.18955775925293422,
+      "inspect_all": 1.0,
+      "inspect_none": 1.25,
+      "saving_vs_best_blanket": 0.8104422407470657
+    },
+    {
+      "defect_rate": 0.05,
+      "cost_ratio": 50,
+      "model_cost": 0.25891645606790614,
+      "inspect_all": 1.0,
+      "inspect_none": 2.5,
+      "saving_vs_best_blanket": 0.7410835439320939
+    },
+    {
+      "defect_rate": 0.05,
+      "cost_ratio": 100,
+      "model_cost": 0.4046803421398343,
+      "inspect_all": 1.0,
+      "inspect_none": 5.0,
+      "saving_vs_best_blanket": 0.5953196578601657
+    },
+    {
+      "defect_rate": 0.05,
+      "cost_ratio": 250,
+      "model_cost": 0.7006330368233301,
+      "inspect_all": 1.0,
+      "inspect_none": 12.5,
+      "saving_vs_best_blanket": 0.2993669631766699
+    },
+    {
+      "defect_rate": 0.05,
+      "cost_ratio": 1000,
+      "model_cost": 2.197937732821353,
+      "inspect_all": 1.0,
+      "inspect_none": 50.0,
+      "saving_vs_best_blanket": -1.197937732821353
+    },
+    {
+      "defect_rate": 0.1,
+      "cost_ratio": 10,
+      "model_cost": 0.2055792777317696,
+      "inspect_all": 1.0,
+      "inspect_none": 1.0,
+      "saving_vs_best_blanket": 0.7944207222682305
+    },
+    {
+      "defect_rate": 0.1,
+      "cost_ratio": 25,
+      "model_cost": 0.3020850134290096,
+      "inspect_all": 1.0,
+      "inspect_none": 2.5,
+      "saving_vs_best_blanket": 0.6979149865709904
+    },
+    {
+      "defect_rate": 0.1,
+      "cost_ratio": 50,
+      "model_cost": 0.4468667566437947,
+      "inspect_all": 1.0,
+      "inspect_none": 5.0,
+      "saving_vs_best_blanket": 0.5531332433562053
+    },
+    {
+      "defect_rate": 0.1,
+      "cost_ratio": 100,
+      "model_cost": 0.6552030114009281,
+      "inspect_all": 1.0,
+      "inspect_none": 10.0,
+      "saving_vs_best_blanket": 0.34479698859907193
+    },
+    {
+      "defect_rate": 0.1,
+      "cost_ratio": 250,
+      "model_cost": 1.2542957980593632,
+      "inspect_all": 1.0,
+      "inspect_none": 25.0,
+      "saving_vs_best_blanket": -0.2542957980593632
+    },
+    {
+      "defect_rate": 0.1,
+      "cost_ratio": 1000,
+      "model_cost": 4.199939993069303,
+      "inspect_all": 1.0,
+      "inspect_none": 100.0,
+      "saving_vs_best_blanket": -3.199939993069303
+    }
+  ],
+  "n_bootstrap": 1000
+}

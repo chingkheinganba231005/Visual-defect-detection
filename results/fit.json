@@ -1,0 +1,232 @@
+{
+  "categories": {
+    "bottle": {
+      "n_fit_images": 167,
+      "n_calibration_good_from_train": 42,
+      "n_test": 83,
+      "n_test_defective": 63,
+      "memory_bank_patches": 1310,
+      "fit_patches": 130928,
+      "seconds_feature_extraction": 34.30742609800018,
+      "seconds_coreset": 67.01682523999989,
+      "seconds_per_image_scoring_all_models": 0.2043553071440001,
+      "pixel_auroc": {
+        "patchcore": 0.9830666467158886,
+        "mean_image": 0.909997194200643
+      }
+    },
+    "cable": {
+      "n_fit_images": 179,
+      "n_calibration_good_from_train": 45,
+      "n_test": 150,
+      "n_test_defective": 92,
+      "memory_bank_patches": 1404,
+      "fit_patches": 140336,
+      "seconds_feature_extraction": 36.132860230999995,
+      "seconds_coreset": 78.17521888800002,
+      "seconds_per_image_scoring_all_models": 0.680951806169231,
+      "pixel_auroc": {
+        "patchcore": 0.9843414615059372,
+        "mean_image": 0.7899434115724395
+      }
+    },
+    "capsule": {
+      "n_fit_images": 175,
+      "n_calibration_good_from_train": 44,
+      "n_test": 132,
+      "n_test_defective": 109,
+      "memory_bank_patches": 1372,
+      "fit_patches": 137200,
+      "seconds_feature_extraction": 48.404807768999945,
+      "seconds_coreset": 73.57147065800018,
+      "seconds_per_image_scoring_all_models": 0.20061447196590879,
+      "pixel_auroc": {
+        "patchcore": 0.9865727382656978,
+        "mean_image": 0.8426979379149102
+      }
+    },
+    "carpet": {
+      "n_fit_images": 224,
+      "n_calibration_good_from_train": 56,
+      "n_test": 117,
+      "n_test_defective": 89,
+      "memory_bank_patches": 1757,
+      "fit_patches": 175616,
+      "seconds_feature_extraction": 50.50052257499965,
+      "seconds_coreset": 131.56628536400012,
+      "seconds_per_image_scoring_all_models": 0.24434257567630036,
+      "pixel_auroc": {
+        "patchcore": 0.9879453488753641,
+        "mean_image": 0.5737741464467484
+      }
+    },
+    "grid": {
+      "n_fit_images": 211,
+      "n_calibration_good_from_train": 53,
+      "n_test": 78,
+      "n_test_defective": 57,
+      "memory_bank_patches": 1655,
+      "fit_patches": 165424,
+      "seconds_feature_extraction": 40.68098752300011,
+      "seconds_coreset": 96.88478714400026,
+      "seconds_per_image_scoring_all_models": 0.19706776190076142,
+      "pixel_auroc": {
+        "patchcore": 0.9650965165897201,
+        "mean_image": 0.6580137096080618
+      }
+    },
+    "hazelnut": {
+      "n_fit_images": 313,
+      "n_calibration_good_from_train": 78,
+      "n_test": 110,
+      "n_test_defective": 70,
+      "memory_bank_patches": 2454,
+      "fit_patches": 245392,
+      "seconds_feature_extraction": 72.00299641799998,
+      "seconds_coreset": 185.535573137,
+      "seconds_per_image_scoring_all_models": 0.2033474305478724,
+      "pixel_auroc": {
+        "patchcore": 0.9836767130250951,
+        "mean_image": 0.7588396055339515
+      }
+    },
+    "leather": {
+      "n_fit_images": 196,
+      "n_calibration_good_from_train": 49,
+      "n_test": 124,
+      "n_test_defective": 92,
+      "memory_bank_patches": 1537,
+      "fit_patches": 153664,
+      "seconds_feature_extraction": 43.098357531999966,
+      "seconds_coreset": 67.66835484,
+      "seconds_per_image_scoring_all_models": 0.20983485894219672,
+      "pixel_auroc": {
+        "patchcore": 0.9905675475719586,
+        "mean_image": 0.78743112253691
+      }
+    },
+    "metal_nut": {
+      "n_fit_images": 176,
+      "n_calibration_good_from_train": 44,
+      "n_test": 115,
+      "n_test_defective": 93,
+      "memory_bank_patches": 1380,
+      "fit_patches": 137984,
+      "seconds_feature_extraction": 29.02928625100003,
+      "seconds_coreset": 52.725860118000014,
+      "seconds_per_image_scoring_all_models": 0.16957912337735814,
+      "pixel_auroc": {
+        "patchcore": 0.9836882806285379,
+        "mean_image": 0.4929322721342315
+      }
+    },
+    "pill": {
+      "n_fit_images": 214,
+      "n_calibration_good_from_train": 53,
+      "n_test": 167,
+      "n_test_defective": 141,
+      "memory_bank_patches": 1678,
+      "fit_patches": 167776,
+      "seconds_feature_extraction": 37.49314229899994,
+      "seconds_coreset": 81.60261429399998,
+      "seconds_per_image_scoring_all_models": 0.17626535263181814,
+      "pixel_auroc": {
+        "patchcore": 0.9740149702531914,
+        "mean_image": 0.7853227507151878
+      }
+    },
+    "screw": {
+      "n_fit_images": 256,
+      "n_calibration_good_from_train": 64,
+      "n_test": 160,
+      "n_test_defective": 119,
+      "memory_bank_patches": 2008,
+      "fit_patches": 200704,
+      "seconds_feature_extraction": 44.50305626200009,
+      "seconds_coreset": 121.73294048399998,
+      "seconds_per_image_scoring_all_models": 0.17040216778571451,
+      "pixel_auroc": {
+        "patchcore": 0.9789461069306344,
+        "mean_image": 0.7982502597550405
+      }
+    },
+    "tile": {
+      "n_fit_images": 184,
+      "n_calibration_good_from_train": 46,
+      "n_test": 117,
+      "n_test_defective": 84,
+      "memory_bank_patches": 1443,
+      "fit_patches": 144256,
+      "seconds_feature_extraction": 35.79891643400015,
+      "seconds_coreset": 61.46989696900005,
+      "seconds_per_image_scoring_all_models": 0.18385419398773062,
+      "pixel_auroc": {
+        "patchcore": 0.9543326756106899,
+        "mean_image": 0.5624676871951522
+      }
+    },
+    "toothbrush": {
+      "n_fit_images": 48,
+      "n_calibration_good_from_train": 12,
+      "n_test": 42,
+      "n_test_defective": 30,
+      "memory_bank_patches": 377,
+      "fit_patches": 37632,
+      "seconds_feature_extraction": 9.394847933999927,
+      "seconds_coreset": 0.80795408400013,
+      "seconds_per_image_scoring_all_models": 0.18202196700000245,
+      "pixel_auroc": {
+        "patchcore": 0.985732933607041,
+        "mean_image": 0.7849853687154013
+      }
+    },
+    "transistor": {
+      "n_fit_images": 170,
+      "n_calibration_good_from_train": 43,
+      "n_test": 100,
+      "n_test_defective": 40,
+      "memory_bank_patches": 1333,
+      "fit_patches": 133280,
+      "seconds_feature_extraction": 37.31239304399992,
+      "seconds_coreset": 48.28574200799994,
+      "seconds_per_image_scoring_all_models": 0.1937992181748242,
+      "pixel_auroc": {
+        "patchcore": 0.9747890556538886,
+        "mean_image": 0.8160991798536007
+      }
+    },
+    "wood": {
+      "n_fit_images": 198,
+      "n_calibration_good_from_train": 49,
+      "n_test": 79,
+      "n_test_defective": 60,
+      "memory_bank_patches": 1553,
+      "fit_patches": 155232,
+      "seconds_feature_extraction": 41.84664883400001,
+      "seconds_coreset": 68.45737627199992,
+      "seconds_per_image_scoring_all_models": 0.2059016212578122,
+      "pixel_auroc": {
+        "patchcore": 0.9381176131768382,
+        "mean_image": 0.7833964232752585
+      }
+    },
+    "zipper": {
+      "n_fit_images": 192,
+      "n_calibration_good_from_train": 48,
+      "n_test": 151,
+      "n_test_defective": 119,
+      "memory_bank_patches": 1506,
+      "fit_patches": 150528,
+      "seconds_feature_extraction": 29.823237283000026,
+      "seconds_coreset": 66.31353568999998,
+      "seconds_per_image_scoring_all_models": 0.17504966664824134,
+      "pixel_auroc": {
+        "patchcore": 0.9824851546805309,
+        "mean_image": 0.6721997374111851
+      }
+    }
+  },
+  "coreset_ratio": 0.01,
+  "train_holdout_share": 0.2,
+  "torch_threads": 4
+}

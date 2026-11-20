@@ -1,0 +1,385 @@
+{
+  "summary": {
+    "patchcore": {
+      "mean_auroc": 0.9874823833730504,
+      "mean_auroc_ci": [
+        0.9826969222013149,
+        0.9917487477998633
+      ],
+      "categories_at_least_0_99": 11
+    },
+    "gaussian": {
+      "mean_auroc": 0.868063570412382,
+      "mean_auroc_ci": [
+        0.8490965893611842,
+        0.8865311754426696
+      ],
+      "categories_at_least_0_99": 1
+    },
+    "mean_image": {
+      "mean_auroc": 0.7366609180853927,
+      "mean_auroc_ci": [
+        0.7139273068746804,
+        0.7586725012934369
+      ],
+      "categories_at_least_0_99": 0
+    },
+    "patchcore_minus_gaussian": {
+      "value": 0.11941881296066836,
+      "ci": [
+        0.10137861619633767,
+        0.13754733971498248
+      ]
+    },
+    "patchcore_minus_mean_image": {
+      "value": 0.2508214652876577,
+      "ci": [
+        0.22873167118271895,
+        0.2733424840205618
+      ]
+    },
+    "pixel_auroc_patchcore_mean": 0.9768915842060674,
+    "pixel_auroc_mean_image_mean": 0.7344233871245814,
+    "worst_category_patchcore": {
+      "category": "pill",
+      "auroc": 0.9498090561920349,
+      "ci": [
+        0.9108019639934534,
+        0.9811852154937261
+      ]
+    }
+  },
+  "categories": {
+    "bottle": {
+      "n_test": 83,
+      "n_defective": 63,
+      "auroc_patchcore": 1.0,
+      "auroc_gaussian": 0.9952380952380951,
+      "auroc_mean_image": 0.9753968253968253,
+      "auroc_patchcore_ci": [
+        1.0,
+        1.0
+      ],
+      "auroc_gaussian_ci": [
+        0.9809523809523809,
+        1.0
+      ],
+      "auroc_mean_image_ci": [
+        0.942063492063492,
+        0.9976190476190476
+      ],
+      "pixel_auroc_patchcore": 0.9830666467158886,
+      "pixel_auroc_mean_image": 0.909997194200643,
+      "texture": false
+    },
+    "cable": {
+      "n_test": 150,
+      "n_defective": 92,
+      "auroc_patchcore": 0.992503748125937,
+      "auroc_gaussian": 0.9479010494752623,
+      "auroc_mean_image": 0.7132683658170915,
+      "auroc_patchcore_ci": [
+        0.9782561844077962,
+        1.0
+      ],
+      "auroc_gaussian_ci": [
+        0.9092906671664168,
+        0.9782655547226385
+      ],
+      "auroc_mean_image_ci": [
+        0.6279844452773613,
+        0.7951649175412294
+      ],
+      "pixel_auroc_patchcore": 0.9843414615059372,
+      "pixel_auroc_mean_image": 0.7899434115724395,
+      "texture": false
+    },
+    "capsule": {
+      "n_test": 132,
+      "n_defective": 109,
+      "auroc_patchcore": 0.973274830474671,
+      "auroc_gaussian": 0.9553250897487036,
+      "auroc_mean_image": 0.6980454726765059,
+      "auroc_patchcore_ci": [
+        0.9437175907459115,
+        0.994415636218588
+      ],
+      "auroc_gaussian_ci": [
+        0.9046569605105704,
+        0.9928599920223374
+      ],
+      "auroc_mean_image_ci": [
+        0.5910949341842842,
+        0.789808536098923
+      ],
+      "pixel_auroc_patchcore": 0.9865727382656978,
+      "pixel_auroc_mean_image": 0.8426979379149102,
+      "texture": false
+    },
+    "carpet": {
+      "n_test": 117,
+      "n_defective": 89,
+      "auroc_patchcore": 0.9903691813804174,
+      "auroc_gaussian": 0.5886837881219903,
+      "auroc_mean_image": 0.46348314606741575,
+      "auroc_patchcore_ci": [
+        0.9755116372391652,
+        0.9995987158908507
+      ],
+      "auroc_gaussian_ci": [
+        0.437800963081862,
+        0.7275381219903692
+      ],
+      "auroc_mean_image_ci": [
+        0.3603430979133227,
+        0.5650180577849117
+      ],
+      "pixel_auroc_patchcore": 0.9879453488753641,
+      "pixel_auroc_mean_image": 0.5737741464467484,
+      "texture": true
+    },
+    "grid": {
+      "n_test": 78,
+      "n_defective": 57,
+      "auroc_patchcore": 0.9699248120300751,
+      "auroc_gaussian": 0.3575605680868839,
+      "auroc_mean_image": 0.7368421052631579,
+      "auroc_patchcore_ci": [
+        0.924812030075188,
+        0.9966583124477861
+      ],
+      "auroc_gaussian_ci": [
+        0.22468671679198,
+        0.49456975772765244
+      ],
+      "auroc_mean_image_ci": [
+        0.6039055973266501,
+        0.8554720133667502
+      ],
+      "pixel_auroc_patchcore": 0.9650965165897201,
+      "pixel_auroc_mean_image": 0.6580137096080618,
+      "texture": true
+    },
+    "hazelnut": {
+      "n_test": 110,
+      "n_defective": 70,
+      "auroc_patchcore": 0.9996428571428572,
+      "auroc_gaussian": 0.97,
+      "auroc_mean_image": 0.6146428571428572,
+      "auroc_patchcore_ci": [
+        0.9978571428571429,
+        1.0
+      ],
+      "auroc_gaussian_ci": [
+        0.9432142857142858,
+        0.9900089285714286
+      ],
+      "auroc_mean_image_ci": [
+        0.5024821428571428,
+        0.7221607142857144
+      ],
+      "pixel_auroc_patchcore": 0.9836767130250951,
+      "pixel_auroc_mean_image": 0.7588396055339515,
+      "texture": false
+    },
+    "leather": {
+      "n_test": 124,
+      "n_defective": 92,
+      "auroc_patchcore": 1.0,
+      "auroc_gaussian": 0.8366168478260869,
+      "auroc_mean_image": 0.756453804347826,
+      "auroc_patchcore_ci": [
+        1.0,
+        1.0
+      ],
+      "auroc_gaussian_ci": [
+        0.756428328804348,
+        0.9140625
+      ],
+      "auroc_mean_image_ci": [
+        0.6742102581521741,
+        0.8352836277173912
+      ],
+      "pixel_auroc_patchcore": 0.9905675475719586,
+      "pixel_auroc_mean_image": 0.78743112253691,
+      "texture": true
+    },
+    "metal_nut": {
+      "n_test": 115,
+      "n_defective": 93,
+      "auroc_patchcore": 0.9995112414467253,
+      "auroc_gaussian": 0.896871945259042,
+      "auroc_mean_image": 0.6427174975562073,
+      "auroc_patchcore_ci": [
+        0.9970674486803519,
+        1.0
+      ],
+      "auroc_gaussian_ci": [
+        0.817192082111437,
+        0.9594452590420331
+      ],
+      "auroc_mean_image_ci": [
+        0.5342008797653959,
+        0.7449046920821114
+      ],
+      "pixel_auroc_patchcore": 0.9836882806285379,
+      "pixel_auroc_mean_image": 0.4929322721342315,
+      "texture": false
+    },
+    "pill": {
+      "n_test": 167,
+      "n_defective": 141,
+      "auroc_patchcore": 0.9498090561920349,
+      "auroc_gaussian": 0.9304418985270049,
+      "auroc_mean_image": 0.6273867975995635,
+      "auroc_patchcore_ci": [
+        0.9108019639934534,
+        0.9811852154937261
+      ],
+      "auroc_gaussian_ci": [
+        0.8813420621931259,
+        0.9700013638843425
+      ],
+      "auroc_mean_image_ci": [
+        0.5196399345335516,
+        0.7253273322422258
+      ],
+      "pixel_auroc_patchcore": 0.9740149702531914,
+      "pixel_auroc_mean_image": 0.7853227507151878,
+      "texture": false
+    },
+    "screw": {
+      "n_test": 160,
+      "n_defective": 119,
+      "auroc_patchcore": 0.9616724738675959,
+      "auroc_gaussian": 0.7468743594998974,
+      "auroc_mean_image": 0.3297806927649108,
+      "auroc_patchcore_ci": [
+        0.9323426931748309,
+        0.9846331215412996
+      ],
+      "auroc_gaussian_ci": [
+        0.6605298216847715,
+        0.8278591924574709
+      ],
+      "auroc_mean_image_ci": [
+        0.24532178725148596,
+        0.41917913506866156
+      ],
+      "pixel_auroc_patchcore": 0.9789461069306344,
+      "pixel_auroc_mean_image": 0.7982502597550405,
+      "texture": false
+    },
+    "tile": {
+      "n_test": 117,
+      "n_defective": 84,
+      "auroc_patchcore": 0.9906204906204906,
+      "auroc_gaussian": 0.972943722943723,
+      "auroc_mean_image": 0.8575036075036074,
+      "auroc_patchcore_ci": [
+        0.9747474747474748,
+        1.0
+      ],
+      "auroc_gaussian_ci": [
+        0.9393668831168832,
+        0.9978354978354979
+      ],
+      "auroc_mean_image_ci": [
+        0.7860660173160173,
+        0.9195526695526695
+      ],
+      "pixel_auroc_patchcore": 0.9543326756106899,
+      "pixel_auroc_mean_image": 0.5624676871951522,
+      "texture": true
+    },
+    "toothbrush": {
+      "n_test": 42,
+      "n_defective": 30,
+      "auroc_patchcore": 0.9972222222222222,
+      "auroc_gaussian": 0.9361111111111111,
+      "auroc_mean_image": 0.975,
+      "auroc_patchcore_ci": [
+        0.9833333333333333,
+        1.0
+      ],
+      "auroc_gaussian_ci": [
+        0.8472222222222222,
+        0.9944444444444445
+      ],
+      "auroc_mean_image_ci": [
+        0.9222222222222222,
+        1.0
+      ],
+      "pixel_auroc_patchcore": 0.985732933607041,
+      "pixel_auroc_mean_image": 0.7849853687154013,
+      "texture": false
+    },
+    "transistor": {
+      "n_test": 100,
+      "n_defective": 40,
+      "auroc_patchcore": 0.9991666666666666,
+      "auroc_gaussian": 0.9625,
+      "auroc_mean_image": 0.8824999999999998,
+      "auroc_patchcore_ci": [
+        0.9962395833333333,
+        1.0
+      ],
+      "auroc_gaussian_ci": [
+        0.9191458333333332,
+        0.9916666666666667
+      ],
+      "auroc_mean_image_ci": [
+        0.8041250000000001,
+        0.9495833333333333
+      ],
+      "pixel_auroc_patchcore": 0.9747890556538886,
+      "pixel_auroc_mean_image": 0.8160991798536007,
+      "texture": false
+    },
+    "wood": {
+      "n_test": 79,
+      "n_defective": 60,
+      "auroc_patchcore": 0.9929824561403509,
+      "auroc_gaussian": 0.9359649122807019,
+      "auroc_mean_image": 0.9675438596491229,
+      "auroc_patchcore_ci": [
+        0.978048245614035,
+        1.0
+      ],
+      "auroc_gaussian_ci": [
+        0.8754166666666667,
+        0.9798464912280702
+      ],
+      "auroc_mean_image_ci": [
+        0.9228070175438596,
+        0.9982456140350877
+      ],
+      "pixel_auroc_patchcore": 0.9381176131768382,
+      "pixel_auroc_mean_image": 0.7833964232752585,
+      "texture": true
+    },
+    "zipper": {
+      "n_test": 151,
+      "n_defective": 119,
+      "auroc_patchcore": 0.9955357142857143,
+      "auroc_gaussian": 0.9879201680672269,
+      "auroc_mean_image": 0.8093487394957983,
+      "auroc_patchcore_ci": [
+        0.9871192226890757,
+        1.0
+      ],
+      "auroc_gaussian_ci": [
+        0.9737329306722688,
+        0.9973739495798319
+      ],
+      "auroc_mean_image_ci": [
+        0.7095588235294118,
+        0.8926273634453782
+      ],
+      "pixel_auroc_patchcore": 0.9824851546805309,
+      "pixel_auroc_mean_image": 0.6721997374111851,
+      "texture": false
+    }
+  },
+  "n_bootstrap": 1000
+}

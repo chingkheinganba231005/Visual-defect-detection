@@ -1,0 +1,68 @@
+{
+  "catch_target": 0.99,
+  "defect_rate": 0.02,
+  "cost_inspection": 1.0,
+  "cost_escape": 100.0,
+  "categories": {
+    "bottle": {
+      "triage": 2.271075487136841,
+      "cost_based": 2.271075487136841
+    },
+    "cable": {
+      "triage": 2.454620599746704,
+      "cost_based": 2.6462011337280273
+    },
+    "capsule": {
+      "triage": 1.3368809223175049,
+      "cost_based": 1.5275747776031494
+    },
+    "carpet": {
+      "triage": 1.7004082202911377,
+      "cost_based": 1.7004082202911377
+    },
+    "grid": {
+      "triage": 1.8683342933654785,
+      "cost_based": 1.8683342933654785
+    },
+    "hazelnut": {
+      "triage": 2.812307357788086,
+      "cost_based": 2.812307357788086
+    },
+    "leather": {
+      "triage": 2.061475992202759,
+      "cost_based": 2.061475992202759
+    },
+    "metal_nut": {
+      "triage": 2.404667377471924,
+      "cost_based": 2.404667377471924
+    },
+    "pill": {
+      "triage": 1.9478914737701416,
+      "cost_based": 2.064321994781494
+    },
+    "screw": {
+      "triage": 1.7960542440414429,
+      "cost_based": 1.8336193561553955
+    },
+    "tile": {
+      "triage": 2.3257486820220947,
+      "cost_based": 2.3257486820220947
+    },
+    "toothbrush": {
+      "triage": 2.1880850791931152,
+      "cost_based": 2.1880850791931152
+    },
+    "transistor": {
+      "triage": 2.202643632888794,
+      "cost_based": 2.202643632888794
+    },
+    "wood": {
+      "triage": 2.1903324127197266,
+      "cost_based": 2.1903324127197266
+    },
+    "zipper": {
+      "triage": 1.42697274684906,
+      "cost_based": 1.6459665298461914
+    }
+  }
+}

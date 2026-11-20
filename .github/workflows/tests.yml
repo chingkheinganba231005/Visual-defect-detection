@@ -1,0 +1,52 @@
+name: tests
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  pytest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+          cache: pip
+      - name: Install
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements.txt
+          python -m pip install -e . --no-deps
+      - name: Run tests
+        run: python -m pytest -q
+      - name: README numbers match results
+        run: python scripts/render_readme.py --check
+
+  docker:
+    needs: pytest
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+          cache: pip
+      - name: Fit a small model on the test images (pretrained backbone)
+        run: |
+          python -m pip install -r requirements.txt
+          python scripts/make_demo_model.py --data tests/data/mvtec --category bottle --out ci_models
+          cp ci_models/* models/
+      - name: Build the image
+        run: docker build -t defect-inspection .
+      - name: Start the container and inspect an image
+        run: |
+          docker run -d --name svc -p 8000:8000 defect-inspection
+          for i in $(seq 1 60); do curl -sf localhost:8000/health && break; sleep 2; done
+          curl -sf localhost:8000/health | grep -q bottle
+          curl -sf -F "file=@tests/data/mvtec/bottle/test/broken_large/000.png" \
+               "localhost:8000/inspect/bottle?heatmap=true" > out.json
+          python -c "import json; b = json.load(open('out.json')); print({k: v for k, v in b.items() if k != 'heatmap_png_base64'}); assert b['decision'] in ('pass', 'send to inspector') and b['heatmap_png_base64']"
+      - name: Container logs
+        if: always()
+        run: docker logs svc || true

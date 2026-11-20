@@ -1,0 +1,9 @@
+# What the Docker image needs to serve the model (torch is installed separately, CPU build).
+numpy==2.5.4
+scipy==1.18.1
+scikit-learn==1.9.1
+pillow==13.0.0
+matplotlib==3.11.2
+fastapi==0.165.0
+uvicorn==0.54.0
+python-multipart==0.0.34
